@@ -52,7 +52,7 @@ body{
 .right-control button{
     font-size: 15px;
     background-color: hsl(225, 23%, 24%);
-    padding: 5px 15px;
+    padding: 10px 15px;
     border-radius: 20px;
     border: none;
     transition: 0.5s;
@@ -61,4 +61,107 @@ body{
 .right-control button:hover{
     background-color: hsl(3, 86%, 64%);
     color: black;
+}
+
+.main-container{
+    display: flex;
+    padding: 15px 0;
+    margin: 20px 30px;
+    color: white;
+    gap: 5px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+    border: 1px solid hsla(200, 60%, 99%, 0.2);
+    border-radius: 20px;
+    max-width: 300px;
+    background-color: hsl(226, 25%, 17%);
+}
+
+.top-card{
+    display: flex;
+    gap: 10px;
+}
+
+.top-card img{
+    height: 40px;
+}
+
+.card-content{
+    width: 80%;
+}
+
+.header{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.bottom-card{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-card button{
+    border: none;
+    background-color: hsl(225, 23%, 24%);
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.bottom-card button:hover{
+    background-color: hsl(3, 86%, 64%);
+    color: black;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+/* For Toggle Button */
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: hsl(225, 23%, 24%);
+    border-radius: 24px;
+    width: 70%;
+    height: 80%;
+    transition: background-color 0.3s;
+}
+
+/* The circular slider */
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Toggled state */
+.toggle-switch input:checked+.slider {
+    background-color: hsl(3, 86%, 64%);
+}
+
+.toggle-switch input:checked+.slider::before {
+    transform: translateX(16px);
 }
