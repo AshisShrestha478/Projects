@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the input and button */
+.inpbtn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+/* Styling for the input field */
+#input-number {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ced4da;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#input-number:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Styling for the button */
+#btn1 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#btn1:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.25);
+}
+
+
+
+
+
+/* Main container to hold the user cards in a responsive grid */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Space between the cards */
+    justify-content: center;
+    /* Center the cards horizontally */
+    padding: 20px;
+    /* Padding around the main container */
+}
+
+/* Style for individual user cards */
+.user {
+    background-color: #121212;
+    /* Light background color */
+    border: 1px solid #dee2e6;
+    /* Border color */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    width: calc(25% - 20px);
+    /* Each card takes up 25% width minus the gap */
+    max-width: 300px;
+    /* Max width to prevent too large cards */
+    padding: 20px;
+    /* Padding inside the card */
+    text-align: center;
+    /* Centered text */
+    transition: transform 0.2s;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover effect for user cards */
+.user:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+/* Style for the user image */
+.user img {
+    border-radius: 50%;
+    /* Make the image circular */
+    width: 72px;
+    /* Set the width */
+    height: 72px;
+    /* Set the height */
+    object-fit: cover;
+    /* Cover to maintain aspect ratio */
+    margin-bottom: 15px;
+    /* Space below the image */
+}
+
+/* Style for the user name */
+.user h2 {
+    font-size: 1.5em;
+    /* Larger font size for the name */
+    margin-bottom: 10px;
+    /* Space below the name */
+    color: #fff;
+    /* Dark color for text */
+}
+
+/* Style for user details */
+.user p {
+    font-size: 1em;
+    /* Standard font size for details */
+    margin-bottom: 5px;
+    /* Space below each paragraph */
+    color: #fff;
+    /* Muted color for details */
+}
