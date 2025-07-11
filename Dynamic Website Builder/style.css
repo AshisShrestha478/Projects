@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    gap: 15px;
+    padding: 30px;
+}
+
+.left{
+    position: relative;
+    width: 200px;
+}
+
+.left img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.left span{
+    padding: 2px;
+    font-size: 14px;
+    position: absolute;
+    background-color: black;
+    bottom: 15px;
+    right: 10px;
+    border-radius: 5px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right > :first-child{
+    font-size: 24px;
+}
+
+.min-info{
+    display: flex;
+    gap: 15px;
+}
