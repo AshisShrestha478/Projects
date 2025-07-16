@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+.hero-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #2F1893;
+    background-image: url(landing-bg.png);
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Landing page */
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    padding-top: 70px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a ion-icon {
+    vertical-align: middle;
+}
+
+.navbar ul li a span {
+    font-weight: 600;
+}
+
+.navbar ul li a:hover {
+    color: rgb(159, 151, 151);
+}
+
+.navbar ul li a ion-icon:hover {
+    color: rgb(159, 151, 151);
+}
+
+
+.navbar ul li a span:hover {
+    color: rgb(159, 151, 151);
+}
+
+.mid-container {
+    position: relative;
+    text-align: center;
+    padding-top: 120px;
+    width: 75%;
+}
+
+.mid-container span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.mid-container h1 {
+    font-size: 64px;
+    font-weight: 700;
+    padding: 20px 0;
+    letter-spacing: 3px;
+}
+
+.mid-container p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.mid-container::before {
+    content: '<';
+    position: absolute;
+    left: 0;
+    font-size: 30px;
+    top: 35%;
+    opacity: 0.5;
+}
+
+.mid-container::after {
+    content: '>';
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    top: 35%;
+}
+
+.dots {
+    font-size: 14px;
+    padding: 50px 0;
+}
+
+.hero-button button {
+    background-color: rgb(24, 24, 229);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 42px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hero-button button:hover {
+    background-color: rgb(0, 0, 144);
+}
+
+#menu {
+    display: none;
+}
+
+/* Tablet Screen */
+
+@media (max-width: 768px) {
+
+    .mid-container span {
+        font-size: 18px;
+    }
+
+    .mid-container h1 {
+        font-size: 50px;
+    }
+
+    .mid-container p {
+        font-size: 16px;
+    }
+
+    .mid-container::before {
+        display: none;
+    }
+
+    .mid-container::after {
+        display: none;
+    }
+}
+
+/* Moblie Screen */
+
+@media (max-width: 426px) {
+
+    .navbar {
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        font-size: 40px;
+    }
+
+    .mid-container {
+        padding-top: 90px;
+        width: 100%;
+    }
+
+    .mid-container span {
+        font-size: 16px;
+    }
+
+    .mid-container h1 {
+        font-size: 34px;
+    }
+
+    .mid-container p {
+        font-size: 16px;
+    }
+
+    .dots {
+        font-size: 10px;
+        padding: 20px 0;
+    }
+
+    .hero-button button {
+        padding: 15px 30px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+/* Content */
+
+.content-container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    background-color: #2F1893;
+    background-image: url(content-bg.png);
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content-texts {
+    position: relative;
+    text-align: center;
+    padding-top: 150px;
+    width: 100%;
+}
+
+.content-texts span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.content-texts h1 {
+    font-size: 64px;
+    font-weight: 700;
+    padding: 20px 0;
+    letter-spacing: 3px;
+}
+
+.content-texts p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+/* Tablet Screen */
+
+@media (max-width: 768px) {
+
+    .content-texts span {
+        font-size: 18px;
+    }
+
+    .content-texts h1 {
+        font-size: 38px;
+    }
+
+    .content-texts p {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+}
+
+
+/* Moblie Screen */
+
+@media (max-width: 426px) {
+
+    .content-texts {
+        padding-top: 90px;
+        width: 100%;
+    }
+
+    .content-texts {
+        padding-top: 90px;
+        width: 100%;
+    }
+
+    .content-texts span {
+        font-size: 16px;
+    }
+
+    .content-texts h1 {
+        font-size: 34px;
+    }
+
+    .content-texts p {
+        font-size: 16px;
+    }
+}
